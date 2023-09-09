@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    display: flex;
+    background-color: #e8e8e8;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.content{
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 500px;
+    -webkit-box-shadow: 3px -1px 25px -10px rgba(34, 60, 80, 0.14);
+    -moz-box-shadow: 3px -1px 25px -10px rgba(34, 60, 80, 0.14);
+    box-shadow: 3px -1px 25px -10px rgba(34, 60, 80, 0.14);
+    margin-bottom: 5%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+ul img{
+    width: 15px;
+}
+ul li:last-child{
+    position: relative;
+    top: -1px;
+    right: -1px;
+}
+ul li:last-child img{
+    position: relative;
+    width: 12px;
+}
+
+.table{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+	width: 90%;
+	margin-bottom: 20px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+}
+
+table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+
+table td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+    font-size: 10px;
+}
+
+.goods *{
+    width: 100px;
+}
+.goods{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+h4 *{
+    display: inline;
+}
+
+.cardMac, .cardHP, .cardAsus{
+    -webkit-box-shadow: 3px -1px 25px -10px rgba(34, 60, 80, 0.14);
+    -moz-box-shadow: 3px -1px 25px -10px rgba(34, 60, 80, 0.14);
+    box-shadow: 3px -1px 25px -10px rgba(34, 60, 80, 0.14);
+    width: 115px;
+    height: 160px;
+}
+
+h4{
+    text-align: center;
+    padding: 3px 5px;
+    font-size: 10px;
+}
+
+
+.goods  img {
+    display: block;
+    margin: auto;
+}
+.cardMac img{
+    margin: 20px 0 30px 9px;
+    /* border: 1px solid red; */
+}
+
+.buy{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    align-items: center;
+}
+
+.buy p{
+    text-align: center;
+}
+
+.buy button{
+    border: 1px  solid transparent;
+    background: #543964;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 0;
+    cursor: pointer;
+    transform: 300ms;
+}
+.cardMac .buy{
+    margin-top: -10px;
+}
+
+button:hover{
+    background: #fff;
+    color: #543964;
+    transform: translate(0px, -1px);
+    border: 1px solid #543964;
+}
+button:active{
+    transform: translate(0px, 1px);
+
+}

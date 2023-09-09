@@ -1,0 +1,88 @@
+form{
+    background-color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 7px;
+    padding: 40px 70px 20px 70px;
+    -webkit-box-shadow: 6px 2px 18px 8px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 2px 18px 8px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 2px 18px 8px rgba(34, 60, 80, 0.2);
+}
+body{
+    background-color: rgb(249, 249, 249);
+    /display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input{
+    width: 380px;
+    height: 25px;
+    margin: 0px 10px 20px 0px;
+    padding: 4px 0 4px  8px;
+    border: none;
+    background-color: #e8e8e8;
+}
+
+select{
+    color: gray;
+}
+.info{
+    display: flex;
+    font-display: column;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 1px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.dateP, .dateInput, .btn{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.dateInput{
+    width: 99%;
+    height: 33px;
+}
+textarea{
+    width: 98%;
+    height: 20%;
+    border: none;
+    background-color: rgb(234, 234, 234);
+    padding: 4px 8px 4px  8px;
+}
+
+.btn{
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    height: 33px;
+    width: 10%;
+    color: rgb(227, 227, 227);
+    background-color: rgb(16, 40, 40);
+}
+p{
+    margin: 0;
+}
+span{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    font-size: 20px;
+}
+.bold{
+    font-weight: 650;
+}
+select{
+    margin-bottom: 20px;
+}
+
+.btn:hover{
+    background-color: rgba(14, 34, 34, 0.901);
+    transform: translate(0, 1px);
+}
+.btn:active{
+    background-color: rgb(16, 40, 40);
+    transform: translate(0px, -1px);
+}
