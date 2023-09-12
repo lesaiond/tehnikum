@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'TT Hoves';
+    color: #222;
+}
+
+p{
+}
+
+section{
+    padding: 0 120px;
+}
+
+.logo{
+    width: 295px; 
+    margin-top: 37px;
+}
+
+.courseData{
+    display: flex;
+    gap: 30px 160px;
+    flex-wrap: wrap;
+    font-size: 21px; 
+    line-height: 140%; 
+    margin-top: 80px;
+    margin-bottom: 75px;
+}
+
+.courseInfo .value{
+    font-weight: 700; 
+}
+
+.hcj{
+    font-family: Chava; 
+    line-height: 110%;
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+
+p{
+    font-size: 27px; 
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.cta{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px 30px;
+    flex-wrap: wrap;
+}
+
+.primary{
+    border-radius: 12px;
+    background: #6E3ABA;
+    padding: 20px 0;
+    color:  #fff;
+    width: 328px; 
+    text-align: center;
+    font-weight: 500; 
+    font-size: 18px;
+}
+
+.secondary{
+    border-radius: 12px;
+    border: 1px solid #6E3ABA;
+    padding: 20px 0;
+    color:  #6E3ABA;
+    width: 328px; 
+    text-align: center;
+    font-weight: 500; 
+    font-size: 18px;
+}
+
+.screen2{
+    margin-top: 160px;
+    margin-bottom: 120px;
+}
+
+.screen2 h1{
+    font-size: 58px; 
+    font-weight: 500;
+    letter-spacing: 0.58px;     
+    width: 600px;
+    margin-bottom: 60px;
+}
+
+.block1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 150px;
+    margin-bottom: 60px;
+}
+
+.block11 h3{
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    font-size: 27px;
+}
+
+.block11 p{
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 140%;
+    width: 450px;
+}
