@@ -18,4 +18,5 @@ a{
     display: flex;
     margin-top: 10%;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
