@@ -106,11 +106,9 @@ h2{
     display: flex;
     flex-wrap: wrap;
     gap: 50px 150px;
-    /* margin-bottom: 60px; */
 }
 
 .block11 div{
-    /* border: 1px solid red; */
     margin-bottom: 20px;
     font-weight: 600;
     line-height: 140%;
@@ -196,9 +194,15 @@ section.purple{
     margin-bottom: 30px;
 }
 
+.infoBlock .block{
+    width: calc(10.3vw + 117px);
+
+}
+
 .block .caption{
     font-size: calc(0.5vw + 13px);
-    font-weight: 140%;
+    font-weight: 140%;  
+    
 }
 .tutor{
     width: calc(7.7vw + 300px);
@@ -212,5 +216,26 @@ section.purple{
 
 .duration .block div{
     width: 400px;
-    margin-bottom: calc(2.2vw + 21  px);
+    margin-bottom: calc(2.2vw + 21px);
+}
+
+.cursProgram .caption{
+    border-bottom: 1px solid #A1A1A1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    font-size: 21px;
+    font-weight: 400;
+    font-size: calc(0.5vw + 14px);
+    line-height: 140%;
+}
+
+.cursProgram{
+    margin: 0 calc(10.6vw - 16px);
+    border: 3px solid #000; 
+    padding: 80px 64px 35px 50px;
+}
+
+.cursProgram .primary{
+    margin-top: 35px;
+    width: calc(10.3vw + 201px);
 }
