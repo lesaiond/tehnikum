@@ -12,10 +12,16 @@ p{
 }
 
 section{
-    padding: 0 120px;
+    padding: 0 calc(10.6vw - 16px);
+    margin-bottom: calc(11vw + 18.4px);
+}
+
+section:last-child{
+    margin-bottom: 0;
 }
 
 .logo{
+    width: calc(1vw + 181px);
     width: 295px; 
     margin-top: 37px;
 }
@@ -34,15 +40,22 @@ section{
     font-weight: 700; 
 }
 
+.hello{
+    background-image: url('img/html_css_js\ 1.svg');
+    background-repeat: no-repeat;
+    background-position: right 20px top 70px;
+    background-size: calc(23.8vw + 90px);
+}
+
 .hcj{
     font-family: Chava; 
     line-height: 110%;
-    font-size: 80px;
+    font-size: calc(1vw + 14.2px);
     margin-bottom: 40px;
 }
 
 p{
-    font-size: 27px; 
+    font-size: calc(1vw + 14px); 
     font-weight: 300;
     line-height: 140%;
 }
@@ -81,32 +94,123 @@ p{
     margin-bottom: 120px;
 }
 
-.screen2 h1{
-    font-size: 58px; 
+h2{
+    font-size: calc(2.6vw + 24px); 
     font-weight: 500;
     letter-spacing: 0.58px;     
-    width: 600px;
     margin-bottom: 60px;
+    text-transform: uppercase; 
 }
 
 .block1{
     display: flex;
     flex-wrap: wrap;
     gap: 50px 150px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
 
-.block11 h3{
+.block11 div{
     /* border: 1px solid red; */
     margin-bottom: 20px;
     font-weight: 600;
     line-height: 140%;
-    font-size: 27px;
+    font-size: calc(1vw + 14px);
 }
 
-.block11 p{
+.block11 p , .text{
     font-weight: 400;
-    font-size: 27px;
     line-height: 140%;
-    width: 450px;
+}
+
+.purple{
+    background: #6E3ABA;
+}
+
+section.purple{
+    padding-bottom: calc(4.4vw + 23px);
+    padding-top: calc(5vw + 22.5px);
+}
+
+.purple h3{
+    font-size: calc(2vw + 26.5px);
+    font-weight: 700;
+    letter-spacing: 1.56px;
+    text-transform: uppercase; 
+    text-align: center;
+    color: #fff;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    margin: calc(4vw + 5px) 0;
+    gap: calc(5.3vw + 12px);
+}
+
+.timeBlock{
+    color: #2F1D4E; 
+}
+
+.timeBlock .number{
+    font-family: Chava;
+    font-size: calc(12.6vw + 12.5px);
+    line-height: 107.5%;
+}
+
+.timeBlock .date{
+    text-align: center;
+    font-size: calc(1.9vw + 3px);
+    font-weight: 500;
+    text-transform: uppercase; 
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.purple .secondary{
+    background: #fff;
+    margin: auto;
+}
+
+.resumeBlock{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 50px;
+}
+
+.resumeBlock h3{
+    font-size: calc(1.1vw + 34px);
+    font-weight: 700;
+    line-height: 58px; 
+}
+
+.resume .infoBlock{
+    margin-top: calc(5.5vw + 19.2px);
+    display: flex;
+    flex-direction: row;
+    gap: 90px 40px;
+}
+
+.block{
+    margin-bottom: 30px;
+}
+
+.block .caption{
+    font-size: calc(0.5vw + 13px);
+    font-weight: 140%;
+}
+.tutor{
+    width: calc(7.7vw + 300px);
+}
+
+.duration .block{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px 120px ;
+}
+
+.duration .block div{
+    width: 400px;
+    margin-bottom: calc(2.2vw + 21  px);
 }
