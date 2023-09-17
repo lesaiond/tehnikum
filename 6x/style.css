@@ -219,6 +219,10 @@ section.purple{
     margin-bottom: calc(2.2vw + 21px);
 }
 
+.duration .block h3{
+    font-size: calc(1vw + 14.3px);
+}
+
 .cursProgram .caption{
     border-bottom: 1px solid #A1A1A1;
     padding-bottom: 25px;
