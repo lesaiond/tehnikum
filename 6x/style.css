@@ -283,3 +283,50 @@ section.purple{
     margin-top: 10px;
     font-size: calc(0.5vw + 14px);
 }
+
+.diplom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.diplom p{
+    margin-top: 30px;
+    flex-basis: 660px;
+    font-weight: 400; 
+}
+
+section p span{
+    font-weight: 700; 
+    
+}
+
+.hhText{
+    margin: 30px 0 35px 0;
+
+}
+
+.bonus{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diplom img , .hh img , .bonus img{
+    /* width: 100%; */
+}
+
+.bonus div{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-basis: 660px;
+    font-weight: 400;
+}
+
+.screen2 span{
+    display: flex;
+}
+
+.screen2 p{
+    flex-basis: 600px;
+}
