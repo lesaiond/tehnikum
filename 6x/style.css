@@ -243,3 +243,43 @@ section.purple{
     margin-top: 35px;
     width: calc(10.3vw + 201px);
 }
+
+.legend{
+    margin-top: calc(5.5vw + 20px);
+    display: flex;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+}
+
+.bio{
+    flex-basis: 460px;
+    flex-grow: 3;
+}
+
+.ym img{
+    width: 100%;
+}
+
+.ym{
+    flex-grow: 1;
+    /* flex-basis: 200px;  */
+}
+
+.bio h3{
+    text-transform: capitalize;
+    text-align: left;
+    font-size: calc(1vw + 35px);
+}
+
+.achivements{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: calc(1vw + 11.6px) calc(8.8vw - 23px);
+    margin-top: calc(5.5vw + 20px);
+}
+
+.achivement span{
+    display: block;
+    margin-top: 10px;
+    font-size: calc(0.5vw + 14px);
+}
