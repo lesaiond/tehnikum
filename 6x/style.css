@@ -120,6 +120,10 @@ h2{
     line-height: 140%;
 }
 
+.block11{
+    flex-basis: 600px;
+}
+
 .purple{
     background: #6E3ABA;
 }
@@ -235,13 +239,13 @@ section.purple{
 
 .cursProgram{
     margin: 0 calc(10.6vw - 16px);
-    border: 3px solid #000; 
-    padding: 80px 64px 35px 50px;
+    border: 2px solid #000; 
+    padding: calc(4.4vw + 23px) calc(4.9vw + 2px) calc(1.3vw + 18px) ;
 }
 
 .cursProgram .primary{
     margin-top: 35px;
-    width: calc(10.3vw + 201px);
+    width: calc(10.3vw + 201px );
 }
 
 .legend{
@@ -249,7 +253,7 @@ section.purple{
     display: flex;
     gap: 20px 50px;
     flex-wrap: wrap;
-}
+}   
 
 .bio{
     flex-basis: 460px;
@@ -285,6 +289,7 @@ section.purple{
 }
 
 .diplom{
+    margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -311,9 +316,6 @@ section p span{
     flex-wrap: wrap;
 }
 
-.diplom img , .hh img , .bonus img{
-    /* width: 100%; */
-}
 
 .bonus div{
     display: flex;
@@ -329,4 +331,84 @@ section p span{
 
 .screen2 p{
     flex-basis: 600px;
+}
+
+.diplom{
+    display: grid;
+    grid-template-areas:    "a b"
+                            "a c";
+}
+
+.diplom h2{
+    grid-area: b;
+}
+.diplom img{
+    grid-area: a;
+}
+.diplom p{
+    grid-area: c;
+}
+
+.cursProgram{
+    position: relative;
+}
+
+#corner{
+    width: calc(8vw);
+    position: absolute;
+    top: -2px;
+    right: -3px;
+}
+
+@media (max-width: 700px) {
+    
+.diplom{
+    display: grid;
+    grid-template-areas:    "a"
+                            "b"
+                            "c";
+}
+
+.diplom h2{
+    grid-area: a;
+}
+
+.diplom img{
+    grid-area: b;
+}
+
+.diplom p{
+    grid-area: c;
+}
+}
+
+
+.desktop{
+    display: block;
+}
+
+.mobile{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        margin-top: 30px;
+        width: 328px; 
+        font-size: 18px; 
+    }
+
+    .diplom img , .hh img , .bonus img{
+        width: 100%;
+        /* min-width: 430px; */
+    }
+    
+    .cursProgram .caption:nth-child(7){
+        border: 0;
+        padding-bottom: 0;
+    }
 }

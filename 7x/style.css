@@ -1,0 +1,18 @@
+.prog{
+    border: 2px solid #000;
+    padding: calc(4.4vw + 23px) calc(5vw) calc(1.3vw + 18px);
+    position: relative;
+}
+
+#corner{
+    width: calc(8vw);
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
+.lesson{
+    padding: 24px 0;
+    border-bottom: 1px solid #1a1a1a;
+}
+
