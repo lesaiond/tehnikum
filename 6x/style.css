@@ -360,6 +360,65 @@ section p span{
     right: -3px;
 }
 
+.aboutUs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 97px;
+}
+
+.blockL{
+    flex-basis: 450px;
+}
+
+.blockL img , .blockR div{
+    margin-bottom: calc(2vw + 12px);
+}
+
+.blockL div{
+    font-size: calc(0.5vw + 20px);
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: uppercase; 
+}
+
+.blockR span{
+    font-size: calc(2.4vw + 25px);
+    font-weight: 700;
+    letter-spacing: 0.58px; 
+}
+
+.blockR div{
+    font-size: calc(0.5vw + 14px);
+    line-height: 140%;
+}
+
+.slide{
+    display: flex;
+    gap: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 700px) {
     
 .diplom{
