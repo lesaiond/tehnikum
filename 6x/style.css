@@ -397,18 +397,149 @@ section p span{
     gap: 25px;
 }
 
+.feedback{
+    border-radius: 12px;
+    background: #f0f7fd;
+    padding: 50px 20px 44px;
+    flex-basis: 270px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feedback p{
+    margin-top: 8px;
+    margin-bottom: 40px;
+
+}
+
+.user{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.username{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.user img{
+    border-radius: 50%;
+}
 
 
 
+.feedbacks{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
 
+.footer{
+    display: flex;
+    background: var(--typo-black, #222);
+    margin: 0;
+    color: #fff;
+    padding: calc(4.4vw + 23.4px) calc(10.6vw - 16px);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 90px 20px;
+}
 
+.blockLeft{
+    flex-basis: 400px;
+}
 
+.infoCurs{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+}
 
+.infoCurs div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 27px; 
+}
 
+.white{
+    border-radius: 12px;
+    background: #FFF;
+    color: var(--typo-black, #222);
+    padding: calc(4.4vw + 13.4px);
+    flex-basis: 400px;
+    position: relative;
+    
+}
 
+h4{
+    text-align: center;
+    font-family: TT Hoves;
+    font-size: calc(0.4vw + 24.3px);
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
+.white p{
+    font-family: TT Hoves;
+    font-size: calc(0.5vw + 14px);
+    margin-left: 36px;
+    margin-top: 10px;
+}
 
+.white .signUp{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
 
+.signUp input{
+    line-height: 150%;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.42);
+}
+
+.grayText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.grayText div{
+    color: grey; 
+}
+
+.grayText div:first-child{
+    margin-bottom: 10px;
+}
+
+.bold{
+    font-weight: 600; 
+    text-transform: lowercase; 
+}
+
+.discount{
+    position: absolute;
+    top: -61px;
+    left: -67px;
+    background: #6E3ABA;
+    border-radius: 50%;
+    color: #fff;
+    font-size: calc(2.5vw + 30px);
+    text-transform: uppercase; 
+    font-weight: 700;
+    padding: calc(1.3vw + 24px) calc(0.5vw + 14px);
+}
 
 
 
@@ -450,6 +581,15 @@ section p span{
     display: none;
 }
 
+.center22{
+    display: flex;
+    justify-content: center;
+}
+
+.center22 .primary{
+    width: 100%;
+}
+
 @media (max-width: 700px) {
     .desktop{
         display: none;
@@ -469,5 +609,11 @@ section p span{
     .cursProgram .caption:nth-child(7){
         border: 0;
         padding-bottom: 0;
+    }
+
+    .discount{
+        top: -71px;
+        right: -6px;
+        left: 238px;
     }
 }
