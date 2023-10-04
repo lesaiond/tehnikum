@@ -48,24 +48,16 @@ function minus(){
     calc.innerHTML+= minus
 }
 function multiply(){ 
-    calc.innerHTML = '';
     let calcN1 = document.getElementsByClassName("calcN")[0].value
     let calcN2 = document.getElementsByClassName("calcN")[1].value
     let multiply = Number(calcN1) * Number(calcN2)
     let calc = document.getElementById("calc")
     calc.innerHTML+=multiply
-    break
 }
 function divide(){
-    calc.innerHTML = '';
     let calcN1 = document.getElementsByClassName("calcN")[0].value
     let calcN2 = document.getElementsByClassName("calcN")[1].value
     let divide = Number(calcN1) / Number(calcN2)
     let calc = document.getElementById("calc")
     calc.innerHTML+=divide
 }
-
-$('.delete').on('click', function() {
-	$('.number').html('');
-    $('.calcN').html('');
-});
