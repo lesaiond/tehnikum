@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<body>
+    <section>
+        <input type="text" class="number p1">
+        <span>+</span>
+        <input type="text" class="number">
+        <button class="Btn" onclick="sum()">=</button>
+        <span class="result"></span>
+    </section>
+    
+    <button class="delete">Очистить</button>
+    
+    <section>
+        <p>Среднее арифматическое:</p>
+        <input type="text" class="number">
+        <span>+</span>
+        <input type="text" class="number">
+        <span>/2</span>
+        <button class="Btn" onclick="sum2()">=</button>
+        <span class="result2"></span>
+        
+        <p>С.А. квадрате</p>
+        <input type="text" class="number">
+        <input type="text" class="number">
+        <button class="Btn" onclick="sum3()">=</button>
+        <span class="result3"></span>
+    </section>
+    
+    <button class="delete">Очистить</button>
+
+
+    <section>
+        <div class="row">
+            <input type="text" class="calcN">
+            <input type="text" class="calcN">
+            <span id="calc"> = </span>
+        </div>
+        <div class="row">
+            <button onclick="plus()">+</button>
+            <button onclick="minus()">-</button>
+            <button onclick="multiply()">*</button>
+            <button onclick="divide()">/</button>
+        </div>
+    </section>
+
+    <button class="delete">Очистить</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
