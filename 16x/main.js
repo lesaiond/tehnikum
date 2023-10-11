@@ -10,11 +10,11 @@ let listc = []
 
 run.addEventListener('click' , function(){
     console.log('Utility is run')   
+    
+
     for(; +from <= +before; from++){
         
         list.push(from)
-
-        // console.log(`from: ${from}`) 
 //                          3 и 4
         let calc = from % 2
         if(from > 0){
@@ -43,12 +43,26 @@ run.addEventListener('click' , function(){
             }
         }
 
-    }console.log(list)
-
+        
+        
         for(let i = 0 ; i < list.length ; i += 2){
             listc.push(list[i])
         }
-
+    }
+    console.log(list)
+    let plus = 0
+    let multiply = 1
+    for (let i = 0 ; i < list.length ; i++){
+        plus += +list[i]
+        multiply = +multiply * +list[i]
+        
+        if(i > 1000){
+            break
+        }
+        
+    }
+    console.log(`сумма массива: ${plus}`)
+    console.log(`произведение массива: ${multiply}`)
     console.log(`чётный числа: ${workc}`)
     console.log(`нечётный числа: ${worknc}`)
     console.log(`положительный числа: ${numP}`)
@@ -59,7 +73,7 @@ run.addEventListener('click' , function(){
         list.pop(list[2])
         list.pop(list[1])
         list.pop(list[0])
-    console.log(`Массив уменщен: ${list}`)
+    console.log(`массив уменщен: ${list}`)
     console.log("Числа в чётных позициях: " + listc)
     console.log('stop utility')
 })

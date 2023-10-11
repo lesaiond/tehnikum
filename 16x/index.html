@@ -5,12 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<style>
+    body{
+        background: #000000e0;
+        color: #f0f2f3; 
+    }
+    section{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.8vw;    
+    }
+    input{
+        color: #f0f2f3;
+        background: #38444c83;
+        height: 20px;
+        width: 180px;
+        padding: 5px;
+        border: none;
+    }
+    button{
+        background: #ec1a62; 
+        border: none;
+        border-radius: 5px;
+        transition: all .3s;
+        /* fill: #dddebdd7; */
+    }
+    
+    button:hover{
+        fill: #fff;
+    }
+    button:active{
+        transform: translate(0 ,5px);
+    }
+</style>
+
 <body>
-
-    <input type="number" id="from" class="ss">
-    <input type="number" id="before" class="ss">
-
-    <button id="run">|></button>
+    <section>
+        <div>
+            <input type="number" id="from" class="ss" placeholder="Введите начало массива">
+            <input type="number" id="before" class="ss" placeholder="Введите конец массива">
+        </div>
+    
+        <button id="run">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg>
+        </button>
+        <p>Откройте консоль</p>
+    </section>
+        
 
 <script src="main.js"></script>
 </body>
