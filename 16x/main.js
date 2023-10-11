@@ -10,11 +10,11 @@ let listc = []
 
 run.addEventListener('click' , function(){
     console.log('Utility is run')   
-    
-
     for(; +from <= +before; from++){
         
         list.push(from)
+
+        // console.log(`from: ${from}`) 
 //                          3 и 4
         let calc = from % 2
         if(from > 0){
@@ -48,8 +48,8 @@ run.addEventListener('click' , function(){
         for(let i = 0 ; i < list.length ; i += 2){
             listc.push(list[i])
         }
-    }
-    console.log(list)
+    }console.log(list)
+    
     let plus = 0
     let multiply = 1
     for (let i = 0 ; i < list.length ; i++){
