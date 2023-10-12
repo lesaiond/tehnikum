@@ -69,7 +69,7 @@ run.addEventListener('click' , function(){
     console.log(`отрицательный числа: ${numM}`)
         list.push(list[0] + list[0]*20)
         list.push(list[0] + list[0]*50)
-    console.log(`Массив увеличен: ${list}`)
+    console.log(`Массив увеличен: ${list }`)
         list.pop(list[2])
         list.pop(list[1])
         list.pop(list[0])
