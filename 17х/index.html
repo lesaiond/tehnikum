@@ -7,8 +7,8 @@
 </head>
 <style>
     body{
-        background: #202122;
-        color: #f0f2f3; 
+        background: #111;
+        color: rgb(171, 169, 167); 
     }
     form{
         display: flex; 
@@ -18,24 +18,21 @@
         gap: 0.8vw;    
     }
     input{
-        color: #f0f2f3;
-        background: #38444c83;
+        background: #292a2a;
+        color: rgb(171, 169, 167);
         height: 20px;
         width: 180px;
         padding: 5px;
+        padding: 10px;
         border: none;
+        border-radius: 15px;
     }
     button{
-        background: #ec1a62; 
+        background-color: #ffcb74;
         border: none;
-        border-radius: 5px;
+        border-radius: 15px;
         transition: all .3s;
-        /* fill: #dddebdd7; */
-    }
-
-    #btn{
         padding: 20px;
-        vertical-align: ce;
     }
     
     button:hover{
@@ -52,6 +49,7 @@
             <input type="number" placeholder="" id="number" >
             <button id="btn" >click me</button>
             <span id="text"></span>
+            <div class="">При ошибки перезапустите страницу</div>
         </form>
 
     </section>

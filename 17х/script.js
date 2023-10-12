@@ -11,28 +11,18 @@ btn.addEventListener('click', function(){
         list.shift()
     }else{}
     if(list[0] == '9' && list[1] == '9' && list[2] == '8' && list.length == 12){
-        alert('We verifed your number')
+        alert('Это узбекский номер')
         list.splice(0, 0, '+')
         list.splice(4, 0, '(')
         list.splice(7, 0, ')')
         list.splice(11, 0, '-')
         list.splice(14, 0, '-')
     }else{
-        alert('Write uz tel. Number')
+        list.unshift('+')
+        alert('Это не узбекский номер')
     }
     
 
-    text.innerHTML = list
+    text.innerHTML = list.join('')
     
 })
-
-
-// let test = [123456678111]
-// let splt = test.split('')
-
-// test[0] = ''
-
-
-const readyArray = [45, 12, 54, 23];
-readyArray.splice(2, 0, 60);
-console.log(readyArray);
