@@ -25,4 +25,5 @@ btn.addEventListener('click', function(){
 
     text.innerHTML = list.join('')
     
+    return
 })
