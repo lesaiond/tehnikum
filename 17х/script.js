@@ -23,7 +23,11 @@ btn.addEventListener('click', function(){
     }
     
 
-    text.innerHTML = list.join('')
+    c = text.innerHTML = list.join('')
     
-    return
+    return c
 })
+
+// function(checkNumber()){
+
+// }x
