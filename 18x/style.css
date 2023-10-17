@@ -6,7 +6,7 @@
 .container{
     width: 400px;
     margin: 100px auto;
-    border: 2px solid black;
+    border: 2px solid black; 
     padding: 30px;
     border-radius: 30px;
 }

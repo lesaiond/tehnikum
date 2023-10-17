@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #111;
+            color: rgb(171, 169, 167);
+        }
+
+        section {
+            padding-top: 10%;
+            padding-bottom: 45%;
+        }
+        .row{
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+        button {
+            /* margin: 0 auto;
+            display: block; */
+            background-color: #ffe251;
+            border: none;
+            border-radius: 15px;
+            transition: all .3s;
+            padding: 20px;
+            color: rgb(124, 124, 124);
+        }
+
+        p {
+            text-align: center;
+        }
+
+        button:hover {
+            color: #111;
+        }
+
+        button:active {
+            transform: translate(0, 5px);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="row">
+            <button id="generateBtn" onclick="go()">Click me</button>
+            <!-- <button id="generateBtn" onclick="work2()">print err</button> -->
+        </div>
+        <p id="jokeText"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
