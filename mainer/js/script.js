@@ -9,7 +9,11 @@ let loginInput = document.querySelector('.login-name')
 //Кнопки
 let registrationButton = document.getElementById('registrationBtn')
 let loginButton = document.getElementById('loginBtn')
+let gameButton = document.getElementById('gameButton')
 
+
+//Блок
+let userInfo = document.querySelector('.user-info')
 
 //Слушатели событий 
 registrationButton.addEventListener('click', function () {
@@ -26,6 +30,9 @@ loginButton.addEventListener('click', function () {
     }
 })
 
+function renderUserInfo(userData){
+    userInfo.innerHTML = `[Логин: ${userData.username}, Баланс: ${userData.balance}]`
+}
 
 async function registerUser(username){
     let payload = {
@@ -44,9 +51,49 @@ async function registerUser(username){
 }
 
 async function loginUser(username){
-    const data = await sendRequest('user', 'GET', username)
+    try{
+        const data = await sendRequest('user', 'GET', `username=${username}`)
+        
+        if(data.error){
+            renderUserInfo('Неверный логин')
+        }else{
+            
+            renderUserInfo(data)
+        }
 
-    return data
+        return data
+    }catch(err){
+        throw err
+    }
+}
+
+async function startGame(startGameData){
+    try{
+        const data = await sendRequest('new_game', ' POST', startGameData)
+
+        return data
+    }catch(error){
+throw error
+    }
+}
+
+async function selectField(selectFieldData){
+    try{
+        const data = await sendRequest('game_step', 'POST', selectFieldData)
+
+        return data
+    }catch(error){
+        throw error
+    }
+}
+async function finishGame(finishGameData){
+    try{
+        const data = await sendRequest('stop_game', 'POST', finishGameData)
+
+        return data
+    }catch(error){
+        throw error
+    }
 }
 
 
