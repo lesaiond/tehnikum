@@ -1,4 +1,4 @@
-//
+//Переменный
 let inputTitle = document.querySelector('#inputTitle').value
 let movieTitle = 'thor'
 let title = document.querySelector('.title')
@@ -13,7 +13,7 @@ let actors = document.querySelector('.actors')
 let poster = document.querySelector('.poster')
 let main = document.querySelector('.main')
 
-//
+//Функции
 async function go() {
     // console.log('is run');
     let a = await sendRequest()
@@ -35,7 +35,6 @@ async function go() {
     appenTag()
 }
 
-
 async function sendRequest() {
     url = `http://www.omdbapi.com/?i=tt3896198&apikey=fc639209`
     let response = await fetch(url, {
@@ -46,5 +45,3 @@ async function sendRequest() {
     response = await response.json()
     return response
 }
-
-
