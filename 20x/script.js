@@ -1,6 +1,4 @@
 //Переменный
-let inputTitle = document.querySelector('#inputTitle').value
-let movieTitle = 'thor'
 let title = document.querySelector('.title')
 let money = document.querySelector('.money')
 let year = document.querySelector('.year')
@@ -14,34 +12,34 @@ let poster = document.querySelector('.poster')
 let main = document.querySelector('.main')
 
 //Функции
-async function go() {
-    // console.log('is run');
-    let a = await sendRequest()
-    console.log(a);
-    // console.log(year);
-    async function appenTag() {
-        main.classList.remove('active')
-        poster.setAttribute('src', `${a.Poster}`)
-        title.innerHTML = a.Title
-        money.innerHTML = a.BoxOffice
-        year.innerHTML = a.Year
-        actors.innerHTML = a.Actors
-        runTime.innerHTML = a.Runtime
-        genre.innerHTML = a.Genre
-        languages.innerHTML = a.Language
-        country.innerHTML = a.Country
-        director.innerHTML = a.Director
+let input = document.querySelector('#input').value
+let btn = document.querySelector('.btn')
+let text = 'hulk'
+let description = document.querySelector('#desctiptions')
+
+
+async function result() {
+    if (input) {
+        url = `https://www.omdbapi.com/?t=${input}&apikey=6ddf134a`
+        let a = await fetch(url)
+        a = await a.json()
+        addTag(a)
+    } else {
+        console.log("Введдите название кино");
     }
-    appenTag()
+    return
 }
 
-async function sendRequest() {
-    url = `http://www.omdbapi.com/?i=tt3896198&apikey=fc639209`
-    let response = await fetch(url, {
-        method: 'POST',
-        t: 'Hulk'
-    }
-    )
-    response = await response.json()
-    return response
+function addTag(a) {
+    main.classList.remove('active')
+    poster.setAttribute('src', `${a.Poster}`)
+    title.innerHTML = a.Title
+    money.innerHTML = a.BoxOffice
+    year.innerHTML = a.Year
+    actors.innerHTML = a.Actors
+    runTime.innerHTML = a.Runtime
+    genre.innerHTML = a.Genre
+    languages.innerHTML = a.Language
+    country.innerHTML = a.Country
+    director.innerHTML = a.Director
 }

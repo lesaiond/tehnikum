@@ -1,8 +1,10 @@
 //Переменные
 let userData = null
+let selectPoints = 0
 
 //Инпуты
 let registrationInput = document.querySelector('.signup-name')
+let otherInput = document.querySelector('.other-input')
 let loginInput = document.querySelector('.login-name')
 
 
@@ -14,6 +16,7 @@ let gameButton = document.getElementById('gameButton')
 
 //Блок
 let userInfo = document.querySelector('.user-info')
+let pointsBlock = document.querySelector('.points')
 
 //Слушатели событий 
 registrationButton.addEventListener('click', function () {
@@ -27,6 +30,25 @@ loginButton.addEventListener('click', function () {
     console.log('login data', loginInput.value);
     if(loginInput.value){
         loginUser(loginInput.value)
+    }
+})
+
+pointsBlock.addEventListener('click', function(event){
+    event.target.classList.toggle('active')
+
+    if (event.target.innerHTML === 'Другое'){
+        otherInput.classList.toggle('disabled')
+        return
+    }else{
+        selectPoints = Number(event.target.innerHTML)
+    }
+})
+
+otherInput.addEventListener('change' , function(event) {
+    if(!!event.target.value){
+        selectPoints = Number(event.target.value)
+    }else{
+        selectPoints = 0
     }
 })
 
@@ -125,3 +147,7 @@ async function sendRequest(url, method, data) {
         return response
     }
 }
+
+// function selectPoints() {
+    
+// }
