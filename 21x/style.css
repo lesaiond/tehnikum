@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    transition: all .4s;
 }
 
 body {
@@ -8,17 +9,19 @@ body {
     color: #bfbfbf;
     padding: 20px 10vw;
 }
-a{
+
+a {
     color: #bfbfbf;
     transition: all .3s;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: #4CAF50;
 
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     gap: 50px;
@@ -27,7 +30,11 @@ header{
     /* margin-left: 20vw; */
 }
 
-nav{
+section {
+    margin: 60px 0;
+}
+
+nav {
     display: flex;
     gap: 20px;
 }
@@ -40,6 +47,7 @@ nav{
 }
 
 #searchInput {
+    border-radius: 12px;
     padding: 8px 15px;
     color: #bfbfbf;
     background: none;
@@ -95,19 +103,129 @@ nav{
     color: #e8e8e8;
 }
 
-label{
+label {
     position: relative;
 }
 
-.poster{
+.poster {
     display: block;
-    height: auto;}
+    height: auto;
+}
 
-.favoriteChbox{
+.favoriteChbox {
     padding: 5px;
     fill: #000;
     position: absolute;
     left: 0;
-    top: 0; 
+    top: 0;
     width: 25px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.container svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s;
+    fill: #666;
+}
+
+.container svg:hover {
+    transform: scale(1.1);
+}
+
+.container input:checked~svg {
+    fill: #ffeb49;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tooltip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: 0px solid transparent;
+    background-color: rgba(100, 77, 237, 0.08);
+    border-radius: 1.25em;
+    transition: all 0.2s linear;
+}
+
+.tooltip:hover {
+    box-shadow: 3.4px 2.5px 4.9px rgba(0, 0, 0, 0.025),
+        8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
+        17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
+        36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
+        99px 72px 143px rgba(0, 0, 0, 0.08);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 4em;
+    background-color: rgba(0, 0, 0, 0.253);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.253) transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.galleryMovie {
+    border-radius: 30px;
+    opacity: 1;
+    -webkit-box-shadow: -4px 7px 16px 3px rgba(34, 34, 34, 0.2);
+    -moz-box-shadow: -4px 7px 16px 3px rgba(34, 34, 34, 0.2);
+    box-shadow: -4px 7px 16px 3px rgba(34, 34, 34, 0.2);
+}
+
+.sunMoon{
+    fill: #d2cbcb;
+    transition: all .3s;
+}
+
+.themeBtn{
+    display: none;
 }

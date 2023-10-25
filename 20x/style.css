@@ -8,17 +8,19 @@ body {
     color: #bfbfbf;
     padding: 20px 10vw;
 }
-a{
+
+a {
     color: #bfbfbf;
     transition: all .3s;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: #4CAF50;
 
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     gap: 50px;
@@ -27,7 +29,7 @@ header{
     /* margin-left: 20vw; */
 }
 
-nav{
+nav {
     display: flex;
     gap: 20px;
 }
@@ -95,19 +97,53 @@ nav{
     color: #e8e8e8;
 }
 
-label{
+label {
     position: relative;
 }
 
-.poster{
+.poster {
     display: block;
-    height: auto;}
+    height: auto;
+}
 
-.favoriteChbox{
+.favoriteChbox {
     padding: 5px;
     fill: #000;
     position: absolute;
     left: 0;
-    top: 0; 
+    top: 0;
     width: 25px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.container svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s;
+    fill: #666;
+}
+
+.container svg:hover {
+    transform: scale(1.1);
+}
+
+.container input:checked~svg {
+    fill: #ffeb49;
 }
